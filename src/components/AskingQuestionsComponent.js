@@ -7,7 +7,7 @@ export default function AskingQuestionsComponent() {
 
   const [name, setName] = useState('');
   const [time, setTime] = useState('');
-  const [output, setOutput] = useState('Hello [UserName]! You woke up at [UserInput]');
+  let [output, setOutput] = useState('Hello [UserName]! You woke up at [UserInput]');
   const getResult = async() =>{
     if (name === "" || time === "") {
       setOutput("Please Enter Something");

@@ -6,7 +6,7 @@ import { useState } from 'react'
 export default function Add2NumbersComponent() {
     const [num1, setNumOne] = useState('');
     const [num2, setNumTwo] = useState('');
-    const [output, setOutput] = useState('The sum of [Input1] + [Input2] = sum');
+    let [output, setOutput] = useState('The sum of [Input1] + [Input2] = sum');
 
     const getResult = async () => {
         if (num1 === "" || num2 === "") {
