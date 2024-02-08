@@ -9,8 +9,15 @@ export default function AskingQuestionsComponent() {
   const [time, setTime] = useState('');
   const [output, setOutput] = useState('Hello [UserName]! You woke up at [UserInput]');
   const getResult = async() =>{
-    const response = await AskingQuestionsApi(name, time);
+    if (name === "" || time === "") {
+      setOutput("Please Enter Something");
+    } else if (name.toLowerCase() === "something" || time.toLowerCase() === "something") {
+      setOutput("Don't actually put something... idiot")
+    } else {
+      const response = await AskingQuestionsApi(name, time);
     setOutput(response);
+    }
+    
   }
   return (
     <body class="backgroundAskingQuestiongs">
