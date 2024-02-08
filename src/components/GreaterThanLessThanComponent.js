@@ -20,7 +20,7 @@ export default function GreaterThanLessThanComponent() {
 
   }
   return (
-    <body className="backgroundGreaterThanLessThan">
+    <div className="backgroundGreaterThanLessThan">
       <div>
         <div className="grid grid-cols-12">
           <div className="col-span-2">
@@ -86,6 +86,6 @@ export default function GreaterThanLessThanComponent() {
 
 
       </div>
-    </body>
+    </div>
   )
 }

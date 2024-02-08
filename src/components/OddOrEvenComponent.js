@@ -19,7 +19,7 @@ export default function OddOrEvenComponent() {
   }
 
   return (
-    <body className="backgroundOddorEven">
+    <div className="backgroundOddorEven">
       <div>
         <div className="grid grid-cols-12">
           <div className="col-span-2">
@@ -78,7 +78,7 @@ export default function OddOrEvenComponent() {
 
 
       </div>
-    </body>
+    </div>
 
   )
 }

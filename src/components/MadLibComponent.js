@@ -30,7 +30,7 @@ export default function MadLibComponent() {
   }
   return (
 
-    <body className="backgroundMadLib">
+    <div className="backgroundMadLib">
       <div>
         <div className="grid grid-cols-12">
           <div className="col-span-2">
@@ -140,6 +140,6 @@ export default function MadLibComponent() {
 
 
       </div>
-    </body>
+    </div>
   )
 }

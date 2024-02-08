@@ -20,7 +20,7 @@ export default function AskingQuestionsComponent() {
     
   }
   return (
-    <body className="backgroundAskingQuestiongs">
+    <div className="backgroundAskingQuestiongs">
     <div>
         <div className="grid grid-cols-12">
             <div className="col-span-2">
@@ -95,6 +95,6 @@ export default function AskingQuestionsComponent() {
 
 
     </div>
-</body>
+</div>
   )
 }

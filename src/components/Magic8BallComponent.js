@@ -17,7 +17,7 @@ export default function Magic8BallComponent() {
     }
   }
   return (
-    <body className="backgroundMagic8Ball">
+    <div className="backgroundMagic8Ball">
       <div>
         <div className="grid grid-cols-12">
           <div className="col-span-2">
@@ -76,6 +76,6 @@ export default function Magic8BallComponent() {
 
 
       </div>
-    </body>
+    </div>
   )
 }

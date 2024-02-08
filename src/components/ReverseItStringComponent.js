@@ -18,7 +18,7 @@ export default function ReverseItStringComponent() {
 
   }
   return (
-    <body className="backgroundReverseItString">
+    <div className="backgroundReverseItString">
       <div>
         <div className="grid grid-cols-12">
           <div className="col-span-2">
@@ -77,6 +77,6 @@ export default function ReverseItStringComponent() {
 
 
       </div>
-    </body>
+    </div>
   )
 }

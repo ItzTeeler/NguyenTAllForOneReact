@@ -20,7 +20,7 @@ export default function Add2NumbersComponent() {
 
     }
     return (
-        <body className="backgroundAdd2Nums">
+        <div className="backgroundAdd2Nums">
             <div>
                 <div className="grid grid-cols-12">
                     <div className="col-span-2">
@@ -82,6 +82,6 @@ export default function Add2NumbersComponent() {
                 </div>
 
             </div>
-        </body>
+        </div>
     )
 }

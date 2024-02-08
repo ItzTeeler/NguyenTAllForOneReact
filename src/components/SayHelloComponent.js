@@ -18,7 +18,7 @@ export default function SayHelloComponent() {
 
   }
   return (
-    <body className="backgroundSayHello">
+    <div className="backgroundSayHello">
       <div>
         <div className="grid grid-cols-12">
           <div className="col-span-2">
@@ -79,6 +79,6 @@ export default function SayHelloComponent() {
 
 
       </div>
-    </body>
+    </div>
   )
 }

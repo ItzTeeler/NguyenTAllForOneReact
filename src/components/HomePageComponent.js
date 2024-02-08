@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function HomePageComponent() {
   return (
-    <body className="backgroundHome">
+    <div className="backgroundHome">
 
       <p className="font-[Rubik-Bold] text-[3.125rem] lg:text-[12.5rem] text-white text-center pt-[3.8125rem] lg:pt-[6.25rem]">All For One</p>
 
@@ -84,6 +84,6 @@ export default function HomePageComponent() {
           </button></div>
         </div>
       </div>
-    </body>
+    </div>
   )
 }

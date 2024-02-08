@@ -17,7 +17,7 @@ export default function ReverseItNumbersComponent() {
     }
   }
   return (
-    <body className="backgroundReverseItNumbers">
+    <div className="backgroundReverseItNumbers">
       <div>
         <div className="grid grid-cols-12">
           <div className="col-span-2">
@@ -77,7 +77,7 @@ export default function ReverseItNumbersComponent() {
 
       </div>
 
-    </body>
+    </div>
 
   )
 }

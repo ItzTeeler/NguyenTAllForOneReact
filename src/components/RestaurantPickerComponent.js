@@ -18,7 +18,7 @@ export default function RestaurantPickerComponent() {
 
   }
   return (
-    <body className="backgroundRestaurantPicker">
+    <div className="backgroundRestaurantPicker">
       <div>
         <div className="grid grid-cols-12">
           <div className="col-span-2">
@@ -82,7 +82,7 @@ export default function RestaurantPickerComponent() {
 
 
       </div>
-    </body>
+    </div>
 
   )
 }
