@@ -59,7 +59,9 @@
   font-family: Rubik-Medium;
   src: url(../src/Rubik/static/Rubik-Medium.ttf);
 }
-
+*{
+  min-width: 0%;
+}
 .backgroundHome {
   background-image:
     linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
