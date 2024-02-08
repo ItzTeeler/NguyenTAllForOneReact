@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import HomePageComponent from './components/HomePageComponent';
-import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Add2NumbersComponent from './components/Add2NumbersComponent';
 import AskingQuestionsComponent from './components/AskingQuestionsComponent';
 import GreaterThanLessThanComponent from './components/GreaterThanLessThanComponent';

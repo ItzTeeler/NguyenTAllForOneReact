@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import { ReverseItNumbersApi, ReverseItStringApi } from '../services/DataServices'
+import { ReverseItStringApi } from '../services/DataServices'
 
 export default function ReverseItStringComponent() {
   const [string, getString] = useState("");

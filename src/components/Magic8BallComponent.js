@@ -7,8 +7,11 @@ export default function Magic8BallComponent() {
   const [input, getInput] = useState("");
   const [output, getOutput] = useState("You should ask your mom");
   const getResult = async () =>{
-    const response = await Magic8BallApi();
-    getOutput(response);
+    if(input === ""){
+      
+    }else{const response = await Magic8BallApi();
+    getOutput(response);}
+    
   }
   return (
     <body class="backgroundMagic8Ball">
@@ -43,7 +46,7 @@ export default function Magic8BallComponent() {
         <div class="flex justify-center px-[2.125rem] ">
             <input
                 class="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full lg:w-[37.0625rem]"
-                type="text" placeholder="Ask" id="askInput"/>
+                type="text" placeholder="Ask" onChange = {(e) => {getInput(e.target.value)}}/>
         </div>
 
         <div class="flex justify-center">
