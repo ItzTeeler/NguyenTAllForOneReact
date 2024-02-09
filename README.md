@@ -28,8 +28,8 @@ To Access each endpoint the file paths are
 /ReverseItNumbersOnly/ReverseItNumbersOnly/{number1}
 /controller/SayHell/{name}
 
-Peer Reviewer - 
-Peer Review - 
+Peer Reviewer - Fernando Gutierrez
+Peer Review - To start off the home page each button has to have 20px apart, other than that good job! Moving the the say hello page. so far everything is functional. Adding two numbers nice job with the tryparse. Looks like everything matches the figma though I'd recommend moving it a bit more to the middle. On greater than and less than your text on the top is touching the back button, other than that good job making it work. reverse it works how it's so post to. Good job on the number reverse only.All and all good job man. I realized your figma was a different width and hight in the end but good job all of the information works.
 
 
 ### Intall tailwind css
