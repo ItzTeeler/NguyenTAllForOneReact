@@ -2,7 +2,7 @@ Name - Tyler Nguyen
 Date - 2/8/2024
 Lab Name - All For One React ReBuild 
 Description - 
-This All for one assignment is build with React and Tailwind for the front end.
+This All for one assignment is build with React and Tailwind React for the front end.
 Website should be responsive in Desktop (1920x1080) and Large Mobile (425w)
 There will be 11 pages, including the landing page which are 
 1. Say hello 
@@ -30,6 +30,11 @@ To Access each endpoint the file paths are
 
 Peer Reviewer - 
 Peer Review - 
+
+
+### Intall tailwind css
+
+### `npm install -D tailwindcss`
 
 # Getting Started with Create React App
 

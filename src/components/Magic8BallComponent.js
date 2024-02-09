@@ -9,7 +9,7 @@ export default function Magic8BallComponent() {
   const getResult = async () => {
     if (input === "") {
       getOutput("Please Enter Something");
-    } else if (input.toLowerCase() === "something") {
+    } else if(input.toLowerCase() === "something") {
       getOutput("Don't actually put something... idiot");
     } else {
       const response = await Magic8BallApi();
@@ -49,14 +49,14 @@ export default function Magic8BallComponent() {
         <div className="flex justify-center px-[2.125rem] ">
           <input
             className="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full lg:w-[37.0625rem]"
-            type="text" placeholder="Ask" onChange={(e) => {getInput(e.target.value)}} value={input} />
+            type="text" placeholder="Ask" onChange={(e) => {getInput(e.target.value)}} value={input}/>
         </div>
 
         <div className="flex justify-center">
           <button type="submit" 
           onClick={() => {
             getResult();
-            getOutput("");
+            getInput("");
           }}
             className=" bg-[#00FF75] rounded-[20px] border-black border-[0.3125rem] text-center w-[17.1875rem] min-h-[4.75rem] lg:w-[28.4375rem] lg:min-h-[6.25rem] mt-[1.25rem] lg:mt-[1.9375rem] lg:mb-[3.125rem]">
             <p className="text-black text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold]">Submit</p>
