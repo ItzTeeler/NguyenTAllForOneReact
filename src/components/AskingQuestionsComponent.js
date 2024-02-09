@@ -60,19 +60,24 @@ export default function AskingQuestionsComponent() {
                 className="flex justify-center lg:justify-end col-span-4 lg:col-span-2 pr-0 lg:pr-[47px] order-2 lg:order-3">
                 <input
                     className="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem]  min-h-[4.8125rem] lg:min-h-[6.25rem] w-full lg:w-[37.0625rem]"
-                    type="text" placeholder="Name" onChange ={(e) => setName(e.target.value)}/>
+                    type="text" placeholder="Name" onChange ={(e) => setName(e.target.value)} value ={name}/>
             </div>
             <div
                 className="flex justify-center lg:justify-start lg:pl-[47px] pl-0 col-span-4 lg:col-span-2 order-4 lg:order-4">
                 <input
                     className="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full lg:w-[37.0625rem]"
-                    type="text" placeholder="Time" onChange ={(e) => setTime(e.target.value)}/>
+                    type="text" placeholder="Time" onChange ={(e) => setTime(e.target.value)} value ={time}/>
             </div>
         </div>
 
 
         <div className="flex justify-center">
-            <button type="submit" id="submit" value="0" onClick = {() => getResult()}
+            <button type="submit" id="submit" value="0" 
+            onClick = {() => {
+              getResult();
+              setName("");
+              setTime("");
+            }}
                 className=" bg-[#00FF75] rounded-[20px] border-black border-[0.3125rem] text-center w-[17.1875rem] min-h-[4.75rem] lg:w-[28.4375rem] lg:min-h-[6.25rem] mt-[1.25rem] lg:mt-[1.9375rem] lg:mb-[3.125rem]">
                 <p className="text-black text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold]">Submit</p>
             </button>

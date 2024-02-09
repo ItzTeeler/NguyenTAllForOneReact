@@ -63,27 +63,27 @@ export default function MadLibComponent() {
           <div className="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
             <input
               className="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-              type="text" placeholder="Gender" onChange={(e) => getGender(e.target.value)} />
+              type="text" placeholder="Gender" onChange={(e) => getGender(e.target.value)} value={gender} />
           </div>
           <div className="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
             <input
               className="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-              type="text" placeholder="Name" onChange={(e) => getName(e.target.value)} />
+              type="text" placeholder="Name" onChange={(e) => getName(e.target.value)} value={name} />
           </div>
           <div className="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
             <input
               className="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-              type="text" placeholder="Age" onChange={(e) => getAge(e.target.value)} />
+              type="text" placeholder="Age" onChange={(e) => getAge(e.target.value)} value={age} />
           </div>
           <div className="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
             <input
               className="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-              type="text" placeholder="Color" onChange={(e) => getColor(e.target.value)} />
+              type="text" placeholder="Color" onChange={(e) => getColor(e.target.value)} value={color} />
           </div>
           <div className="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
             <input
               className="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-              type="text" placeholder="Pronoun" onChange={(e) => getPronoun(e.target.value)} />
+              type="text" placeholder="Pronoun" onChange={(e) => getPronoun(e.target.value)} value={pronoun} />
           </div>
         </div>
 
@@ -91,33 +91,45 @@ export default function MadLibComponent() {
           <div className="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
             <input
               className="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-              type="text" placeholder="Food" onChange={(e) => getFood(e.target.value)} />
+              type="text" placeholder="Food" onChange={(e) => getFood(e.target.value)} value={food} />
           </div>
           <div className="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
             <input
               className="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-              type="text" placeholder="Job" onChange={(e) => getJob(e.target.value)} />
+              type="text" placeholder="Job" onChange={(e) => getJob(e.target.value)} value={job} />
           </div>
           <div className="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
             <input
               className="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-              type="text" placeholder="Adjective 1" onChange={(e) => getAdjective1(e.target.value)} />
+              type="text" placeholder="Adjective 1" onChange={(e) => getAdjective1(e.target.value)} value={adjective1} />
           </div>
           <div className="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
             <input
               className="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-              type="text" placeholder="Adjective 2" onChange={(e) => getAdjective2(e.target.value)} />
+              type="text" placeholder="Adjective 2" onChange={(e) => getAdjective2(e.target.value)} value={adjective2} />
           </div>
           <div className="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
             <input
               className="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-              type="text" placeholder="Noun" onChange={(e) => getNoun(e.target.value)} />
+              type="text" placeholder="Noun" onChange={(e) => getNoun(e.target.value)} value={noun} />
           </div>
         </div>
 
 
         <div className="flex justify-center">
-          <button type="submit" value="0" onClick={() => getResult()}
+          <button type="submit" value="0" onClick={() => {
+            getResult();
+            getGender("");
+            getName("");
+            getAge("");
+            getColor("");
+            getPronoun("");
+            getFood("");
+            getAdjective1("");
+            getAdjective2("");
+            getJob("");
+            getNoun("");
+          }}
             className=" bg-[#00FF75] rounded-[20px] border-black border-[0.3125rem] text-center w-[17.1875rem] min-h-[4.75rem] lg:w-[28.4375rem] lg:min-h-[6.25rem] mt-[1.25rem] lg:mt-[1.9375rem] lg:mb-[3.125rem]">
             <p className="text-black text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold]">Submit</p>
           </button>

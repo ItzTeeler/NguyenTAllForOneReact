@@ -53,18 +53,22 @@ export default function Add2NumbersComponent() {
                     <div className="flex justify-center lg:justify-end col-span-2 lg:col-span-1 lg:pr-[47px] px-[2.125rem]">
                         <input
                             className="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full lg:w-[37.0625rem]"
-                            type="text" placeholder="Number 1" onChange={(e) => setNumOne(e.target.value)} />
+                            type="text" placeholder="Number 1" onChange={(e) => setNumOne(e.target.value)} value={num1} />
                     </div>
                     <div className="flex justify-center lg:justify-start lg:pl-[47px] col-span-2 lg:col-span-1 px-[2.125rem]">
                         <input
                             className="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full lg:w-[37.0625rem]"
-                            type="text" placeholder="Number 2" onChange={(e) => setNumTwo(e.target.value)} />
+                            type="text" placeholder="Number 2" onChange={(e) => setNumTwo(e.target.value)} value={num2} />
                     </div>
                 </div>
 
 
                 <div className="flex justify-center">
-                    <button type="submit" id="submit" value="0" onClick={() => getResult()}
+                    <button type="submit" id="submit" value="0" onClick={() => {
+                        getResult();
+                        setNumOne("");
+                        setNumTwo("");
+                    }}
                         className=" bg-[#00FF75] rounded-[20px] border-black border-[0.3125rem] text-center w-[17.1875rem] min-h-[4.75rem] lg:w-[28.4375rem] lg:min-h-[6.25rem] mt-[1.25rem] lg:mt-[1.9375rem] lg:mb-[3.125rem]">
                         <p className="text-black text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold]">Submit</p>
                     </button>
